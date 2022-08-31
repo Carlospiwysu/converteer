@@ -6,7 +6,7 @@ const express = require('express');
 const app = express();
 
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 // cuando get solo tiene el / indicamos la raiz de la ruta
 app.get('/', (req, res) => {//req para requerir info res para responder al cliente
     res.send("Hola mundo");
